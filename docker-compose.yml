@@ -41,6 +41,8 @@ services:
       - N8N_ENFORCE_SETTINGS_FILE_PERMISSIONS=false
       - N8N_SECURE_COOKIE=false
       - N8N_PUSH_BACKEND=websocket
+      - GENERIC_TIMEZONE=${GENERIC_TIMEZONE}
+      - N8N_DEFAULT_BINARY_DATA_MODE=filesystem
     ports:
       - "5678:5678"
     links:
